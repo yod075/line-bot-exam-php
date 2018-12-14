@@ -54,6 +54,8 @@
         $arrayPostData['messages'][1]['stickerId'] = "40";
         $arrayPostData['messages'][2]['type'] = "text1";
         $arrayPostData['messages'][2]['text1'] = "จะไปก็ไปเลย";
+        $arrayPostData['messages'][3]['packageId'] = "2";
+        $arrayPostData['messages'][3]['stickerId'] = "23";
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Video"
