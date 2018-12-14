@@ -35,9 +35,7 @@
         $arrayPostData['messages'][0]['previewImageUrl'] = $image_url;
         replyMsg($arrayHeader,$arrayPostData);
     }
-#ตัวอย่าง Message Type "Image"
-    else if($message == "รูปวิว"){
-        $image_url = "#ตัวอย่าง Message Type "Image"
+#ตัวอย่าง Message Type "Image
     else if($message == "รูปวิว"){
         $image_url = "https://wallpaperbrowse.com/media/images/eiffel-tower-wallpaper-18_fRZLW4V.jpg";
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
