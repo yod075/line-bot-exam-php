@@ -45,15 +45,15 @@
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Text + Sticker ใน 1 ครั้ง"
-    else if($message == "ลา"){
+    else if($message == "ลาก่อน"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "อย่าทิ้งกันไป";
         $arrayPostData['messages'][1]['type'] = "sticker";
         $arrayPostData['messages'][1]['packageId'] = "2";
         $arrayPostData['messages'][1]['stickerId'] = "40";
-        $arrayPostData['messages'][2]['type'] = "text1";
-        $arrayPostData['messages'][2]['text1'] = "จะไปก็ไปเลย";
+        $arrayPostData['messages'][2]['type'] = "textt";
+        $arrayPostData['messages'][2]['textt'] = "จะไปก็ไปเลย";
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Video"
