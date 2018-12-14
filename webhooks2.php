@@ -54,8 +54,8 @@
         $arrayPostData['messages'][1]['stickerId'] = "131";
         replyMsg($arrayHeader,$arrayPostData);
     }
-#ตัวอย่าง Message Type "Video"
-   else if($message == "video"){
+    #ตัวอย่าง Message Type "Video"
+    else if($message == "Video"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "video";
         $arrayPostData['messages'][0]['originalContentUrl'] = "https://www.youtube.com/watch?v=wftjwZa8xyg";//ใส่ url ของ video ที่ต้องการส่ง
