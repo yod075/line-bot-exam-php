@@ -74,12 +74,42 @@
         $arrayPostData['messages'][1]['stickerId'] = "40";
         replyMsg($arrayHeader,$arrayPostData);
     }
-    #ตัวอย่าง Message Type "Video"
+     #ตัวอย่าง Message Type "Video"
     else if($message == "Video"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "video";
         $arrayPostData['messages'][0]['originalContentUrl'] = "https://www.youtube.com/watch?v=wftjwZa8xyg";//ใส่ url ของ video ที่ต้องการส่ง
         $arrayPostData['messages'][0]['previewImageUrl'] = "https://wallpaperbrowse.com/media/images/303836.jpg";//ใส่รูป preview ของ video
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+     #ตัวอย่าง Message Type "Text + Sticker ใน 1 ครั้ง"
+    else if($message == "จั้ง"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "เด็กฝึกงานแผนกมิเตอร์";
+        $arrayPostData['messages'][1]['type'] = "sticker";
+        $arrayPostData['messages'][1]['packageId'] = "1";
+        $arrayPostData['messages'][1]['stickerId'] = "15";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+     #ตัวอย่าง Message Type "Text + Sticker ใน 1 ครั้ง"
+     else if($message == "จั้งเป็นไง"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "อ๋อ !! เป็นเด็กอ้วนใส่แว่น เอ๋อๆ ชอบหมกมุ่นเรื่องผู้หญิง .";
+        $arrayPostData['messages'][1]['type'] = "sticker";
+        $arrayPostData['messages'][1]['packageId'] = "1";
+        $arrayPostData['messages'][1]['stickerId'] = "7";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+     #ตัวอย่าง Message Type "Text + Sticker ใน 1 ครั้ง"
+     else if($message == "จริงหรอ"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "จริงๆ น่ะ จริงที่ซู้ดดด";
+        $arrayPostData['messages'][1]['type'] = "sticker";
+        $arrayPostData['messages'][1]['packageId'] = "1";
+        $arrayPostData['messages'][1]['stickerId'] = "110";
         replyMsg($arrayHeader,$arrayPostData);
     }
 function replyMsg($arrayHeader,$arrayPostData){
