@@ -32,9 +32,9 @@
         $arrayPostData['messages'][0]['type'] = "sticker";
         $arrayPostData['messages'][0]['packageId'] = "3";
         $arrayPostData['messages'][0]['stickerId'] = "36";
-           $arrayPostData['messages'][0]['type'] = "flex";
-    $arrayPostData['messages'][0]['altText'] = "This is a Flex message",
-    $arrayPostData['messages'][0]['contents'] = {
+           $arrayPostData['messages'][1]['type'] = "flex";
+    $arrayPostData['messages'][1]['altText'] = "This is a Flex message",
+    $arrayPostData['messages'][1]['contents'] = {
         test// เนื้อหาตรงนี้อ่านต่อเลยจ้า
     }
         replyMsg($arrayHeader,$arrayPostData);
