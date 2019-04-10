@@ -32,6 +32,11 @@
         $arrayPostData['messages'][0]['type'] = "sticker";
         $arrayPostData['messages'][0]['packageId'] = "3";
         $arrayPostData['messages'][0]['stickerId'] = "36";
+           $arrayPostData['messages'][0]['type'] = "flex";
+    $arrayPostData['messages'][0]['altText'] = "This is a Flex message",
+    $arrayPostData['messages'][0]['contents'] = {
+        test// เนื้อหาตรงนี้อ่านต่อเลยจ้า
+    }
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Image"
@@ -57,7 +62,7 @@
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "location";
         $arrayPostData['messages'][0]['title'] = "สยามพารากอน";
-        $arrayPostData['messages'][0]['address'] =   "13.7465354,100.532752";
+        $arrayPostData['messages'][0]['address'] =   "13.7465354,100.532752"
         $arrayPostData['messages'][0]['latitude'] = "13.7465354";
         $arrayPostData['messages'][0]['longitude'] = "100.532752";
         replyMsg($arrayHeader,$arrayPostData);
