@@ -34,8 +34,6 @@
         $arrayPostData['messages'][0]['stickerId'] = "36";
            $arrayPostData['messages'][1]['type'] = "flex";
     $arrayPostData['messages'][1]['altText'] = "This is a Flex message";
-    $arrayPostData['messages'][1]['contents'] = "
-        test// เนื้อหาตรงนี้อ่านต่อเลยจ้า";
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Image"
